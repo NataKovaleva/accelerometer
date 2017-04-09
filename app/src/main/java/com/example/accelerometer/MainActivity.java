@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         SensorManager.getRotationMatrix(rotationMatrix, null, accelData, magnetData); //Получаем матрицу поворота
         SensorManager.getOrientation(rotationMatrix, OrientationData); //Получаем данные ориентации устройства в пространстве
 
-        if((xyView==null)||(xzView==null)||(zyView==null)){  
+        if((xyView==null)||(xzView==null)||(zyView==null)){
             xyView = (TextView) findViewById(R.id.xyValue);
             xzView = (TextView) findViewById(R.id.xzValue);
             zyView = (TextView) findViewById(R.id.zyValue);
